@@ -7,6 +7,9 @@
     .center-container{
         width: 95%;
     } 
+    .skill{
+        width: 33%;
+    }
 }
 @media screen and (max-width: 768px) {
     header{
@@ -31,10 +34,11 @@
     #web-developer{
         width: 80%;
         margin: 80px auto;
-        text-align: center;
+       
     }
     #web-developer, #name{
         margin-bottom: 0px;
+        text-align: center;
     }
     #name{
         margin-top: 20px;
@@ -49,7 +53,6 @@
     #my-picture, #about{
         width: 100%;
         text-align: center;
-       
     }
     #my-picture img{
         width: 180px;
@@ -82,6 +85,9 @@
     #name{
         margin: 40px 0px;
     } 
+    .skill{
+        width: 50%;
+    }
 }
 @media screen and (max-width: 415px){
     nav ul li{

@@ -26,6 +26,13 @@ $font-2: 'Qwitcher Grypen', cursive;
     font-size: 50px;
     font-weight: 100;
 }
+@mixin progress($width, $height,$num, $prog-color, $position){
+    width: $width;
+    height: $height;
+    border: $num solid $prog-color;
+    border-radius: 50%;
+    position: $position;
+}
 body{
     color: $white;
 }
@@ -197,4 +204,39 @@ nav{
 .numbers, .service-blok{
     padding: 40px 0px;
 }
-
+.wraper-skills{
+    @extend .wraper;
+}
+.skill{
+   width: 16.6%;
+   margin-top: 40px;
+   position: relative;
+}
+.progress{
+    @include progress(100px, 100px, 1px, #ccc, relative);
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+.progress-circle{
+    @include progress(100%, 100%, 5px, $yellow, absolute);
+  }
+.progress-num{
+    position: absolute;
+    top: 40px;
+    left: 33px;
+    font-size: 20px;
+}
+.percentage-95{
+    clip: rect(0, 88px, 100px, 0);
+}
+.percentage-80{
+    clip: rect(0, 75px, 100px, 0);
+}
+.percentage-60{
+    clip: rect(0, 60px, 100px, 0);
+}
+.skill-name{
+    text-align: center;
+    margin-top: 60px;
+}

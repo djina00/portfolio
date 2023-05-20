@@ -24,7 +24,7 @@ a:hover {
   color: #f5eb7d;
 }
 
-.wraper {
+.wraper, .wraper-skills {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -211,4 +211,53 @@ nav li {
 
 .numbers, .service-blok {
   padding: 40px 0px;
+}
+
+.skill {
+  width: 16.6%;
+  margin-top: 40px;
+  position: relative;
+}
+
+.progress {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.progress-circle {
+  width: 100%;
+  height: 100%;
+  border: 5px solid #f5eb7d;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.progress-num {
+  position: absolute;
+  top: 40px;
+  left: 33px;
+  font-size: 20px;
+}
+
+.percentage-95 {
+  clip: rect(0, 88px, 100px, 0);
+}
+
+.percentage-80 {
+  clip: rect(0, 75px, 100px, 0);
+}
+
+.percentage-60 {
+  clip: rect(0, 60px, 100px, 0);
+}
+
+.skill-name {
+  text-align: center;
+  margin-top: 60px;
 }/*# sourceMappingURL=style.css.map */
