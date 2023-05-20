@@ -1,0 +1,95 @@
+@media screen and (max-width: 1500px){
+    .container-services{
+        width: 45%;
+    }
+}
+@media  screen and (max-width: 1024px) {
+    .center-container{
+        width: 95%;
+    } 
+}
+@media screen and (max-width: 768px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav, #logo{
+        text-align: center;
+        width: 100%;
+    }
+    nav ul li:first-child{
+        margin-left: 0px;
+    }
+    nav ul li a:first-child{
+        color: #ebebeb;
+        border-bottom: none;
+    }
+    #region-1 #name h1,#region-1 #name p {
+      display: none;
+    }
+    #web-developer{
+        width: 80%;
+        margin: 80px auto;
+        text-align: center;
+    }
+    #web-developer, #name{
+        margin-bottom: 0px;
+    }
+    #name{
+        margin-top: 20px;
+    }
+    .wraper{
+        display: flex;
+        flex-direction: column;
+    }
+    #about h4{
+        margin-bottom: 20px;
+    }
+    #my-picture, #about{
+        width: 100%;
+        text-align: center;
+       
+    }
+    #my-picture img{
+        width: 180px;
+    }
+    .button{
+        margin: 20px auto;
+    }
+    #about p:nth-child(3) {
+        display: none;
+      }
+    .container-services{
+        width: 70%;
+        margin: 0px auto;
+    }
+    .paragraph p{
+        display: none;
+    }
+}
+@media screen and (max-width: 610px){
+    #region-1 .center-container{
+        display: flex;
+        flex-direction: column;
+    }
+    #web-developer{
+        width: 90%;
+    }
+    #name h1, #name p{
+        font-size: 15px;
+    }
+    #name{
+        margin: 40px 0px;
+    } 
+}
+@media screen and (max-width: 415px){
+    nav ul li{
+        display: block;
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+}
+@media screen and (max-width: 390px){
+    
+}
