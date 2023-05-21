@@ -11,6 +11,7 @@ $dgrey: #181a18;
 $lgrey: #2a2b2a;
 $white: #ebebeb;
 $font-2: 'Qwitcher Grypen', cursive;
+$rainbow-colors: $dgrey, $lgrey, $white, $dgrey, $white, $dgrey, $lgrey;
 @mixin s-between{
     display: flex;
     flex-direction: row;
@@ -18,8 +19,7 @@ $font-2: 'Qwitcher Grypen', cursive;
 }
 @mixin background($bg-color){
     background-color: $bg-color;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding: 40px;
 }
 @mixin font{
     font-family: $font-2;
@@ -112,6 +112,18 @@ nav{
 #name, #web-developer{
     margin: 150px 0px;
 }
+.rainbow-text {
+    animation: rainbow-animation 15s infinite;
+  }
+@keyframes rainbow-animation {
+    @for $i from 1 through length($rainbow-colors) {
+      $color: nth($rainbow-colors, $i);
+      $percentage: percentage($i / length($rainbow-colors));
+      #{$percentage} {
+        color: $color;
+      }
+    }
+  }
 .button{
     padding: 15px;
     width: 150px;;
@@ -141,9 +153,8 @@ nav{
 }
 .shadow{
     position: absolute;
-    font-size: 40px;
     color: rgba(255, 255, 255, 0.1);
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     left: 50%;
     top: -15px;
     font-size: 20px;
@@ -187,6 +198,7 @@ nav{
 .service-blok{
     background-color: $dgrey;
     border-radius: 7px;
+    box-shadow: 3px 3px 10px $dgrey;
     h3{
       margin: 15px 0px;
     }
@@ -201,8 +213,11 @@ nav{
         margin-bottom: 5px;
     }
 }
-.numbers, .service-blok{
+.service-blok{
     padding: 40px 0px;
+}
+.numbers{
+    margin-top: 40px;
 }
 .wraper-skills{
     @extend .wraper;
@@ -240,3 +255,66 @@ nav{
     text-align: center;
     margin-top: 60px;
 }
+.project-container {
+    position: relative;
+    margin-top: 40px;
+    width: 30%;
+    img {
+      width: 100%;
+      border-radius: 7px;
+    }
+    .project-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      text-align: center;
+    }
+    &:hover .project-text {
+      opacity: 1;
+    }
+    &:hover img{
+        opacity: 0.1;
+        transition: opacity 0.5s ease-in-out;
+    }
+  }
+  #coming-soon-img{
+    opacity: 0.3;
+  }
+  #coming-soon{
+    opacity: 1;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   Arrow
+  .arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+  }
+  .circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }

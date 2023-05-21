@@ -104,6 +104,33 @@ nav li {
   margin: 150px 0px;
 }
 
+.rainbow-text {
+  animation: rainbow-animation 15s infinite;
+}
+
+@keyframes rainbow-animation {
+  14.2857142857% {
+    color: #181a18;
+  }
+  28.5714285714% {
+    color: #2a2b2a;
+  }
+  42.8571428571% {
+    color: #ebebeb;
+  }
+  57.1428571429% {
+    color: #181a18;
+  }
+  71.4285714286% {
+    color: #ebebeb;
+  }
+  85.7142857143% {
+    color: #181a18;
+  }
+  100% {
+    color: #2a2b2a;
+  }
+}
 .button {
   padding: 15px;
   width: 150px;
@@ -124,8 +151,7 @@ nav li {
 
 .grey-background {
   background-color: #181a18;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding: 40px;
 }
 
 .title {
@@ -138,9 +164,8 @@ nav li {
 
 .shadow {
   position: absolute;
-  font-size: 40px;
   color: rgba(255, 255, 255, 0.1);
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   left: 50%;
   top: -15px;
   font-size: 20px;
@@ -174,8 +199,7 @@ nav li {
 
 .l-grey-background {
   background-color: #2a2b2a;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding: 40px;
 }
 
 .paragraph {
@@ -195,6 +219,7 @@ nav li {
 .service-blok {
   background-color: #181a18;
   border-radius: 7px;
+  box-shadow: 3px 3px 10px #181a18;
 }
 .service-blok h3 {
   margin: 15px 0px;
@@ -209,8 +234,12 @@ nav li {
   margin-bottom: 5px;
 }
 
-.numbers, .service-blok {
+.service-blok {
   padding: 40px 0px;
+}
+
+.numbers {
+  margin-top: 40px;
 }
 
 .skill {
@@ -260,4 +289,56 @@ nav li {
 .skill-name {
   text-align: center;
   margin-top: 60px;
+}
+
+.project-container {
+  position: relative;
+  margin-top: 40px;
+  width: 30%;
+}
+.project-container img {
+  width: 100%;
+  border-radius: 7px;
+}
+.project-container .project-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  text-align: center;
+}
+.project-container:hover .project-text {
+  opacity: 1;
+}
+.project-container:hover img {
+  opacity: 0.1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#coming-soon-img {
+  opacity: 0.3;
+}
+
+#coming-soon {
+  opacity: 1;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */

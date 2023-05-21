@@ -2,6 +2,10 @@
     .container-services{
         width: 45%;
     }
+    .project-container{
+        width: 51%;
+        margin: 40px auto;
+    }
 }
 @media  screen and (max-width: 1024px) {
     .center-container{
@@ -9,6 +13,10 @@
     } 
     .skill{
         width: 33%;
+    }
+    .project-container{
+        width: 60%;
+        margin: 20px auto;
     }
 }
 @media screen and (max-width: 768px) {
@@ -70,6 +78,9 @@
     .paragraph p{
         display: none;
     }
+    .project-container{
+        width: 70%;
+    }
 }
 @media screen and (max-width: 610px){
     #region-1 .center-container{
@@ -87,6 +98,9 @@
     } 
     .skill{
         width: 50%;
+    }
+    .circle{
+        display: none;
     }
 }
 @media screen and (max-width: 415px){
