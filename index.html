@@ -24,8 +24,8 @@
                     <li><a href="#about-anchor">About</a></li>
                     <li><a href="#services-anchor">Services</a></li>
                     <li><a href="#projects-anchor">Projects</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Blog</a></li>
+                    <li><a href="#contact-anchor">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
                 </ul>
             </nav>
         </header>
@@ -39,9 +39,12 @@
                 <h1 class="rainbow-text">Đurđina</h1>
                 <h1 class="rainbow-text">Radisavljević <span>.</span></h1>
                 <p>Hi!</p>
-                <div class="button">
-                    <a href="">CONTACT ME</a>
-                </div>
+                <a href="">
+                    <div class="button">
+                        CONTACT ME
+                    </div>
+                </a>
+                
             </div>
         </div>
     </div>
@@ -71,9 +74,11 @@
                         <p><span>Age: </span> 22</p>
                         <p><span>Experience: </span> 1+ year</p>
                     </div>
-                    <div class="button">
-                        <a href="">Download CV</a>
-                    </div>
+                    <a href="">
+                        <div class="button">
+                            Download CV
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -230,7 +235,7 @@
                     </div>
                   </div>
                   <div class="project-container">
-                    <a href=""><img src="assets/img/portfolio-website.JPG" alt="portfolio website"></a>
+                    <a href=""><img src="assets/img/portfolio-website.jpg" alt="portfolio website"></a>
                     <div class="project-text">
                         <p>HTML 5, SASS, Responsive CSS, SEO</p>
                     </div>
@@ -247,10 +252,53 @@
         </div>
     </div>
     <!-- Region 5 -->
-
-
-
-
+    <div class="grey-background" id="contact-anchor">
+        <div class="center-container">
+            <div class="title">
+                <h2>Contact Me</h2>
+                <div class="shadow">
+                    <h2>Contact Me</h2>
+                </div>
+            </div>
+            <div class="wraper t-margin">
+                <div id="contact-me">
+                    <p><i class="fa-solid fa-phone"></i> +123 456 789</p>
+                    <p><i class="fa-solid fa-envelope"></i> djurdjina.radisavljevic.10.22@ict.edu.rs</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Zdravka Čelara 16, Belgrade, ICT</p>
+                </div>
+                <div id="contact-form">
+                    <form id="contact" name="contact" action="contact.php" method="post">
+                        <div class="contact-row">
+                            <input type="text" name="f-name" id="f-name" required="required" placeholder="First Name :"/>
+                            <input type="text" name="l-name" id="l-name" required="required" placeholder="Last Name :"/>
+                        </div>
+                        <div class="contact-row top-bottom">
+                            <input type="email" name="Email" id="Email" required="required" placeholder="Email address :">
+                        </div>
+                        <div class="contact-row">
+                            <textarea id="text" name="text" placeholder="Enter your message..." rows="10" cols="100" required="required"></textarea>
+                        </div>
+                        <div class="contact-row">
+                            <button type="submit" id="bt-sum">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+       
+        <p>
+            <a href=""><i class="fa-brands fa-sass"></i></a>
+        </p>
+        <p>
+            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+        </p>
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2023 Đurđina Radisavljević</p>
+    </footer>
 
 
 

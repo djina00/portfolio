@@ -24,7 +24,7 @@ a:hover {
   color: #f5eb7d;
 }
 
-.wraper, .wraper-skills {
+.wraper, .contact-row, .wraper-skills {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -43,8 +43,12 @@ a:hover {
   margin: 0px auto;
 }
 
-.t-margin {
+.t-margin, .project-container, .skill, .numbers {
   margin-top: 40px;
+}
+
+.top-bottom {
+  margin: 15px 0px;
 }
 
 #region-1 {
@@ -137,21 +141,16 @@ nav li {
   border: 1px solid #f5eb7d;
   text-align: center;
   border-radius: 15px;
-}
-.button a {
   color: #f5eb7d;
 }
 .button:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-color: #181a18;
-}
-.button:hover a {
+  background-color: #f5eb7d;
   color: #181a18;
 }
 
 .grey-background {
   background-color: #181a18;
-  padding: 40px;
+  padding: 70px 0px;
 }
 
 .title {
@@ -199,7 +198,7 @@ nav li {
 
 .l-grey-background {
   background-color: #2a2b2a;
-  padding: 40px;
+  padding: 70px 0px;
 }
 
 .paragraph {
@@ -238,13 +237,8 @@ nav li {
   padding: 40px 0px;
 }
 
-.numbers {
-  margin-top: 40px;
-}
-
 .skill {
   width: 16.6%;
-  margin-top: 40px;
   position: relative;
 }
 
@@ -293,7 +287,6 @@ nav li {
 
 .project-container {
   position: relative;
-  margin-top: 40px;
   width: 30%;
 }
 .project-container img {
@@ -323,6 +316,76 @@ nav li {
 
 #coming-soon {
   opacity: 1;
+}
+
+#contact-me {
+  width: 35%;
+}
+
+#contact-form {
+  width: 60%;
+}
+
+#contact-me {
+  padding: 100px 0px;
+}
+#contact-me i {
+  margin-right: 20px;
+  color: #f5eb7d;
+}
+#contact-me p {
+  margin-bottom: 15px;
+}
+
+.contact-row input[type=text] {
+  width: 47%;
+  background-color: #333536;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px solid #333536;
+}
+.contact-row input[type=email], .contact-row textarea {
+  width: 100%;
+  background-color: #333536;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px solid #333536;
+}
+.contact-row input[type=text], .contact-row input[type=email], .contact-row textarea {
+  caret-color: #ebebeb;
+}
+.contact-row button {
+  width: 35%;
+  background-color: #333536;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px solid #333536;
+  margin: 0px auto;
+  margin-top: 15px;
+  cursor: pointer;
+  color: #ebebeb;
+}
+.contact-row button:hover {
+  background-color: #f5eb7d;
+  color: #181a18;
+}
+
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 10px 0px;
+}
+footer i {
+  font-size: 25px;
+}
+footer p:nth-child(2) {
+  margin: 15px 0px;
+}
+footer p:nth-child(2) a:nth-child(2) {
+  margin: 0px 10px;
+}
+footer p:last-child i {
+  font-size: 15px;
 }
 
 .arrow {
