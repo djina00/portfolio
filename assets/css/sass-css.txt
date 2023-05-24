@@ -364,3 +364,135 @@ footer{
     align-items: center;
     font-size: 20px;
 }
+@media screen and (max-width: 1500px){
+    .container-services {
+        width: 45%;
+        &:first-child, &:nth-child(2) {
+            margin-bottom: 2rem;
+        }
+    }
+    .project-container{
+        width: 51%;
+        margin: 2rem auto;
+    }
+    .numbers{
+        margin-top: 1rem;
+    }
+}
+@media  screen and (max-width: 1024px) {
+    .center-container{
+        width: 95%;
+    } 
+    .skill{
+        width: 33%;
+    }
+    .project-container{
+        width: 40%;
+        margin: 1.3rem auto;
+    }
+    #contact-me, #contact-form{
+        width: 70%;
+        flex-direction: column;
+        margin: 0px auto;
+    }
+    #contact-me{
+        padding: 1.3rem 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    #logo{
+        text-align: center;
+        width: 100%;
+    }
+    nav{
+        @extend #logo;
+        li:first-child{
+            margin-left: 0;
+        }
+        a:first-child{
+            color: $white;
+            border-bottom: none;
+        }
+    }
+   #region-1 #name h1,#region-1 #name p {
+      display: none;
+    }
+    #name, #web-developer{
+        text-align: center;
+        margin-bottom: 4rem;
+        margin-top: 1.3rem;
+    }
+    #web-developer{
+        width: 80%;
+        margin: 80px auto;
+    }
+    .wraper{
+       @extend header;
+    }
+    #about{
+        h4{
+            margin-bottom: 1.3rem;
+        }
+        p:nth-child(3) {
+            display: none;
+          }
+    }
+    #my-picture, #about{
+        width: 100%;
+        text-align: center;
+    }
+    #my-picture img{
+        width: 180px;
+    }
+    .button{
+        margin: 1.3rem auto;
+        &:hover{
+            background-color: initial;
+            color: $yellow;
+        }
+    }
+    .container-services{
+        width: 70%;
+        margin: 0px auto;
+        .service-blok:hover{
+            box-shadow: none;
+        }
+        &:first-child, &:nth-child(2), &:nth-child(3){
+            margin-bottom: 2rem;
+        }
+    }
+    .paragraph p{
+        display: none;
+    }
+    .project-container{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 610px){
+    #region-1 .center-container{
+        @extend header;
+    }
+    #web-developer{
+        width: 90%;
+    }
+    #name h1, #name p{
+        font-size: 15px;
+    }
+    .skill{
+        width: 50%;
+    }
+    .circle{
+        display: none;
+    }
+}
+@media screen and (max-width: 415px){
+    nav ul li{
+        display: block;
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+}

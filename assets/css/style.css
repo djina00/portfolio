@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   color: #ebebeb;
 }
@@ -22,6 +26,7 @@ a {
 }
 a:hover {
   color: #f5eb7d;
+  transition: 0.8s;
 }
 
 .wraper, .contact-row, .wraper-skills {
@@ -44,11 +49,11 @@ a:hover {
 }
 
 .t-margin, .project-container, .skill, .numbers {
-  margin-top: 40px;
+  margin-top: 3rem;
 }
 
 .top-bottom {
-  margin: 15px 0px;
+  margin: 0.9rem 0;
 }
 
 #region-1 {
@@ -56,7 +61,7 @@ a:hover {
   background-size: cover;
   background-position: center bottom;
   background-attachment: fixed;
-  padding: 20px 0px;
+  padding: 1.3rem 0;
 }
 
 .active-link {
@@ -69,7 +74,7 @@ a:hover {
 }
 #logo a {
   font-family: "Qwitcher Grypen", cursive;
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: 100;
 }
 
@@ -80,7 +85,7 @@ span {
 nav {
   width: 70%;
   text-align: right;
-  margin-top: 15px;
+  margin-top: 0.9rem;
 }
 nav li {
   margin-left: 4%;
@@ -90,7 +95,7 @@ nav li {
   width: 25%;
 }
 #web-developer h2 {
-  margin: 15px 0px;
+  margin: 0.9rem 0px;
 }
 #web-developer p:first-child {
   color: #f5eb7d;
@@ -101,43 +106,20 @@ nav li {
   border: 2px solid #f5eb7d;
 }
 #name p {
-  margin: 15px 0px;
+  margin: 2rem 0;
 }
 
 #name, #web-developer {
-  margin: 150px 0px;
+  margin: 9rem 0;
 }
 
 .rainbow-text {
   animation: rainbow-animation 15s infinite;
 }
 
-@keyframes rainbow-animation {
-  14.2857142857% {
-    color: #181a18;
-  }
-  28.5714285714% {
-    color: #2a2b2a;
-  }
-  42.8571428571% {
-    color: #ebebeb;
-  }
-  57.1428571429% {
-    color: #181a18;
-  }
-  71.4285714286% {
-    color: #ebebeb;
-  }
-  85.7142857143% {
-    color: #181a18;
-  }
-  100% {
-    color: #2a2b2a;
-  }
-}
 .button {
-  padding: 15px;
-  width: 150px;
+  margin: 15px 0px;
+  padding: 15px 20px;
   border: 1px solid #f5eb7d;
   text-align: center;
   border-radius: 15px;
@@ -146,11 +128,12 @@ nav li {
 .button:hover {
   background-color: #f5eb7d;
   color: #181a18;
+  transition: 0.8s;
 }
 
 .grey-background {
   background-color: #181a18;
-  padding: 70px 0px;
+  padding: 5rem 0;
 }
 
 .title {
@@ -164,9 +147,9 @@ nav li {
 .shadow {
   position: absolute;
   color: rgba(255, 255, 255, 0.1);
-  letter-spacing: 5px;
+  letter-spacing: 0.3rem;
   left: 50%;
-  top: -15px;
+  top: -0.9rem;
   font-size: 20px;
 }
 
@@ -182,32 +165,32 @@ nav li {
 }
 #about h4 {
   font-family: "Qwitcher Grypen", cursive;
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: 100;
 }
 #about > p {
-  margin: 20px 0px;
+  margin: 1.3rem 0;
 }
 
 #about-me p {
-  margin-bottom: 10px;
+  margin-bottom: 0.6rem;
 }
 #about-me p:last-child {
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 .l-grey-background {
   background-color: #2a2b2a;
-  padding: 70px 0px;
+  padding: 5rem 0;
 }
 
 .paragraph {
   width: 35%;
-  margin: 20px auto;
+  margin: 1.3rem auto;
   text-align: center;
 }
 .paragraph h2 {
-  margin-bottom: 10px;
+  margin-bottom: 0.6rem;
 }
 
 .container-services {
@@ -221,20 +204,24 @@ nav li {
   box-shadow: 3px 3px 10px #181a18;
 }
 .service-blok h3 {
-  margin: 15px 0px;
+  margin: 0.9rem 0px;
 }
 .service-blok i {
-  font-size: 25px;
+  font-size: 1.6rem;
+}
+.service-blok:hover {
+  box-shadow: 3px 3px 30px #f5eb7d;
+  transition: 1s;
 }
 
 .numbers p:first-child {
   color: #f5eb7d;
-  font-size: 20px;
-  margin-bottom: 5px;
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
 }
 
 .service-blok {
-  padding: 40px 0px;
+  padding: 3rem 0;
 }
 
 .skill {
@@ -265,7 +252,7 @@ nav li {
   position: absolute;
   top: 40px;
   left: 33px;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 .percentage-95 {
@@ -282,7 +269,7 @@ nav li {
 
 .skill-name {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 4rem;
 }
 
 .project-container {
@@ -318,23 +305,20 @@ nav li {
   opacity: 1;
 }
 
-#contact-me {
-  width: 35%;
-}
-
 #contact-form {
-  width: 60%;
+  width: 55%;
 }
 
 #contact-me {
-  padding: 100px 0px;
+  width: 40%;
+  padding: 6rem 0;
 }
 #contact-me i {
-  margin-right: 20px;
+  margin-right: 1.3rem;
   color: #f5eb7d;
 }
 #contact-me p {
-  margin-bottom: 15px;
+  margin-bottom: 0.9rem;
 }
 
 .contact-row input[type=text] {
@@ -361,31 +345,32 @@ nav li {
   border-radius: 15px;
   border: 2px solid #333536;
   margin: 0px auto;
-  margin-top: 15px;
+  margin-top: 0.9rem;
   cursor: pointer;
   color: #ebebeb;
 }
 .contact-row button:hover {
   background-color: #f5eb7d;
   color: #181a18;
+  transition: 0.8s;
 }
 
 footer {
   background-color: #000;
   text-align: center;
-  padding: 10px 0px;
+  padding: 0.6rem 0;
 }
 footer i {
-  font-size: 25px;
+  font-size: 1.6rem;
 }
 footer p:nth-child(2) {
-  margin: 15px 0px;
+  margin: 0.9rem 0;
 }
 footer p:nth-child(2) a:nth-child(2) {
-  margin: 0px 10px;
+  margin: 0 0.6rem;
 }
 footer p:last-child i {
-  font-size: 15px;
+  font-size: 0.9rem;
 }
 
 .arrow {
