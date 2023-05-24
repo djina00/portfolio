@@ -71,9 +71,6 @@
   #about h4 {
     margin-bottom: 1.3rem;
   }
-  #about p:nth-child(3) {
-    display: none;
-  }
   #my-picture, #about {
     width: 100%;
     text-align: center;
