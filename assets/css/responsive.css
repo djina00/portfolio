@@ -8,10 +8,6 @@
   .container-services:first-child, .container-services:nth-child(2) {
     margin-bottom: 2rem;
   }
-  .project-container {
-    width: 51%;
-    margin: 2rem auto;
-  }
   .numbers {
     margin-top: 1rem;
   }
@@ -24,7 +20,7 @@
     width: 33%;
   }
   .project-container {
-    width: 40%;
+    width: 60%;
     margin: 1.3rem auto;
   }
   #contact-me, #contact-form {
