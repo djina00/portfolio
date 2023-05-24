@@ -35,9 +35,6 @@ $form-color: #333536;
         flex-direction: column;
         margin: 0px auto;
     }
-    #contact-me{
-        padding: 1.3rem 0;
-    }
 }
 @media screen and (max-width: 768px) {
     header{
@@ -78,7 +75,6 @@ $form-color: #333536;
         h4{
             margin-bottom: 1.3rem;
         }
-        
     }
     #my-picture, #about{
         width: 100%;
@@ -109,6 +105,14 @@ $form-color: #333536;
     }
     .project-container{
         width: 70%;
+    }
+    #contact-me{
+        padding: 1.3rem 0;
+        text-align: center;
+        i{
+            display: block;
+            margin-bottom: 0.6rem;
+        }
     }
 }
 @media screen and (max-width: 610px){
