@@ -1,6 +1,10 @@
 $white: #ebebeb;
 $yellow:#f5eb7d;
+$form-color: #333536;
 @media screen and (max-width: 1500px){
+    .center-container{
+        width: 85%;
+    } 
     .container-services {
         width: 45%;
         &:first-child, &:nth-child(2) {
@@ -39,13 +43,13 @@ $yellow:#f5eb7d;
     header{
         display: flex;
         flex-direction: column;
+        
     }
-    #logo{
-        text-align: center;
+    #logo, nav{
         width: 100%;
+        text-align: center;
     }
     nav{
-        @extend #logo;
         li:first-child{
             margin-left: 0;
         }
@@ -67,7 +71,8 @@ $yellow:#f5eb7d;
         margin: 80px auto;
     }
     .wraper{
-       @extend header;
+        display: flex;
+        flex-direction: column;
     }
     #about{
         h4{
@@ -110,7 +115,8 @@ $yellow:#f5eb7d;
 }
 @media screen and (max-width: 610px){
     #region-1 .center-container{
-        @extend header;
+        display: flex;
+        flex-direction: column;
     }
     #web-developer{
         width: 90%;
@@ -124,11 +130,19 @@ $yellow:#f5eb7d;
     .circle{
         display: none;
     }
+    #contact-me, #contact-form{
+        width: 90%;
+    }
 }
 @media screen and (max-width: 415px){
+    nav{
+        width: 100%;
+    }
     nav ul li{
         display: block;
         margin-left: 0px;
         margin-bottom: 5px;
+        text-align: center;
     }
+
 }

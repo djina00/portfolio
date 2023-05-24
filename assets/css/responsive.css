@@ -1,4 +1,7 @@
 @media screen and (max-width: 1500px) {
+  .center-container {
+    width: 85%;
+  }
   .container-services {
     width: 45%;
   }
@@ -21,7 +24,7 @@
     width: 33%;
   }
   .project-container {
-    width: 60%;
+    width: 40%;
     margin: 1.3rem auto;
   }
   #contact-me, #contact-form {
@@ -34,13 +37,13 @@
   }
 }
 @media screen and (max-width: 768px) {
-  header, .wraper {
+  header {
     display: flex;
     flex-direction: column;
   }
   #logo, nav {
-    text-align: center;
     width: 100%;
+    text-align: center;
   }
   nav li:first-child {
     margin-left: 0;
@@ -60,6 +63,10 @@
   #web-developer {
     width: 80%;
     margin: 80px auto;
+  }
+  .wraper {
+    display: flex;
+    flex-direction: column;
   }
   #about h4 {
     margin-bottom: 1.3rem;
@@ -114,5 +121,19 @@
   }
   .circle {
     display: none;
+  }
+  #contact-me, #contact-form {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 415px) {
+  nav {
+    width: 100%;
+  }
+  nav ul li {
+    display: block;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    text-align: center;
   }
 }/*# sourceMappingURL=responsive.css.map */
