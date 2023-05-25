@@ -88,6 +88,12 @@
   .container-services:first-child, .container-services:nth-child(2), .container-services:nth-child(3) {
     margin-bottom: 2rem;
   }
+  .container-services .service-blok {
+    padding: 2rem 0;
+  }
+  .paragraph {
+    width: 70%;
+  }
   .paragraph p {
     display: none;
   }

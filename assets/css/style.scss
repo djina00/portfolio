@@ -202,6 +202,7 @@ nav{
     background-color: $dgrey;
     border-radius: 7px;
     box-shadow: 3px 3px 10px $dgrey;
+    padding: 3rem 0;
     h3{
       margin: 0.9rem 0px;
     }
@@ -220,9 +221,6 @@ nav{
         margin-bottom: 0.3rem;
     }
     @extend .t-margin;
-}
-.service-blok{
-    padding: 3rem 0;
 }
 .wraper-skills{
     @extend .wraper;

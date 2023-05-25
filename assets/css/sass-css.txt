@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
 *{
     padding: 0px;
@@ -202,6 +202,7 @@ nav{
     background-color: $dgrey;
     border-radius: 7px;
     box-shadow: 3px 3px 10px $dgrey;
+    padding: 3rem 0;
     h3{
       margin: 0.9rem 0px;
     }
@@ -220,9 +221,6 @@ nav{
         margin-bottom: 0.3rem;
     }
     @extend .t-margin;
-}
-.service-blok{
-    padding: 3rem 0;
 }
 .wraper-skills{
     @extend .wraper;
@@ -365,16 +363,15 @@ footer{
     font-size: 20px;
 }
 @media screen and (max-width: 1500px){
+    .center-container{
+        width: 85%;
+    } 
     .container-services {
         width: 45%;
         &:first-child, &:nth-child(2) {
             margin-bottom: 2rem;
         }
-    }
-    .project-container{
-        width: 51%;
-        margin: 2rem auto;
-    }
+    }    
     .numbers{
         margin-top: 1rem;
     }
@@ -387,7 +384,7 @@ footer{
         width: 33%;
     }
     .project-container{
-        width: 40%;
+        width: 60%;
         margin: 1.3rem auto;
     }
     #contact-me, #contact-form{
@@ -395,21 +392,18 @@ footer{
         flex-direction: column;
         margin: 0px auto;
     }
-    #contact-me{
-        padding: 1.3rem 0;
-    }
 }
 @media screen and (max-width: 768px) {
     header{
         display: flex;
         flex-direction: column;
+        
     }
-    #logo{
-        text-align: center;
+    #logo, nav{
         width: 100%;
+        text-align: center;
     }
     nav{
-        @extend #logo;
         li:first-child{
             margin-left: 0;
         }
@@ -431,15 +425,13 @@ footer{
         margin: 80px auto;
     }
     .wraper{
-       @extend header;
+        display: flex;
+        flex-direction: column;
     }
     #about{
         h4{
             margin-bottom: 1.3rem;
         }
-        p:nth-child(3) {
-            display: none;
-          }
     }
     #my-picture, #about{
         width: 100%;
@@ -464,17 +456,32 @@ footer{
         &:first-child, &:nth-child(2), &:nth-child(3){
             margin-bottom: 2rem;
         }
+        .service-blok{
+            padding: 2rem 0;
+        }
     }
-    .paragraph p{
-        display: none;
+    .paragraph{
+        width: 70%;
+        p{
+            display: none;
+        }
     }
     .project-container{
         width: 70%;
     }
+    #contact-me{
+        padding: 1.3rem 0;
+        text-align: center;
+        i{
+            display: block;
+            margin-bottom: 0.6rem;
+        }
+    }
 }
 @media screen and (max-width: 610px){
     #region-1 .center-container{
-        @extend header;
+        display: flex;
+        flex-direction: column;
     }
     #web-developer{
         width: 90%;
@@ -488,11 +495,20 @@ footer{
     .circle{
         display: none;
     }
+    #contact-me, #contact-form{
+        width: 90%;
+    }
 }
 @media screen and (max-width: 415px){
+    nav{
+        width: 100%;
+    }
     nav ul li{
         display: block;
         margin-left: 0px;
         margin-bottom: 5px;
+        text-align: center;
     }
 }
+
+
