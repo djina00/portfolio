@@ -94,14 +94,18 @@ nav li {
 #web-developer {
   width: 25%;
 }
-#web-developer h2 {
+#web-developer h1 {
   margin: 0.9rem 0px;
+  font-size: 1.8rem;
 }
 #web-developer p:first-child {
   color: #f5eb7d;
 }
 
-#name h1::before {
+#name {
+  font-size: 1.3rem;
+}
+#name h2::before {
   content: "";
   border: 2px solid #f5eb7d;
 }

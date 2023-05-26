@@ -51,7 +51,7 @@ $form-color: #333536;
             border-bottom: none;
         }
     }
-   #region-1 #name h1,#region-1 #name p {
+   #region-1 #name h2,#region-1 #name p {
       display: none;
     }
     #name, #web-developer{
@@ -125,7 +125,7 @@ $form-color: #333536;
     #web-developer{
         width: 90%;
     }
-    #name h1, #name p{
+    #name p{
         font-size: 15px;
     }
     .skill{

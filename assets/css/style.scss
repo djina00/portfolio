@@ -107,18 +107,20 @@ nav{
 }
 #web-developer{
     width: 25%;
-    h2{
+    h1{
         margin: 0.9rem 0px;
+        font-size: 1.8rem;
     }
     p:first-child{
         color: $yellow;
     }
 }
 #name{
-    h1::before{
+    h2::before{
         content: "";
         border: 2px solid $yellow;
        }
+       font-size: 1.3rem;
    p{
     margin: 2rem 0;
    }
