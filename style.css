@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Cabin", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: #ebebeb;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: #ebebeb;
+}
+a:hover {
+  color: #f5eb7d;
+  transition: 0.8s;
+}
+
+.wraper, .contact-row, .wraper-skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.center-align {
+  align-items: center;
+}
+
+.wrap-flex {
+  flex-wrap: wrap;
+}
+
+.center-container {
+  width: 80%;
+  margin: 0px auto;
+}
+
+.t-margin, .project-container, .skill, .numbers {
+  margin-top: 3rem;
+}
+
+.top-bottom {
+  margin: 0.9rem 0;
+}
+
+#region-1 {
+  background-image: url("../img/computer.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  padding: 1.3rem 0;
+}
+
+.active-link {
+  color: #f5eb7d;
+  border-bottom: 2px solid #f5eb7d;
+}
+
+#logo {
+  width: 20%;
+}
+#logo a {
+  font-family: "Qwitcher Grypen", cursive;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+span {
+  color: #f5eb7d;
+}
+
+nav {
+  width: 70%;
+  text-align: right;
+  margin-top: 0.9rem;
+}
+nav li {
+  margin-left: 4%;
+}
+
+#web-developer {
+  width: 25%;
+}
+#web-developer h1 {
+  margin: 0.9rem 0px;
+  font-size: 1.8rem;
+}
+#web-developer p:first-child {
+  color: #f5eb7d;
+}
+
+#name {
+  font-size: 1.3rem;
+}
+#name h2::before {
+  content: "";
+  border: 2px solid #f5eb7d;
+}
+#name p {
+  margin: 2rem 0;
+}
+
+#name, #web-developer {
+  margin: 9rem 0;
+}
+
+.rainbow-text {
+  animation: rainbow-animation 15s infinite;
+}
+
+.button {
+  margin: 15px 0px;
+  padding: 15px 20px;
+  border: 1px solid #f5eb7d;
+  text-align: center;
+  border-radius: 15px;
+  color: #f5eb7d;
+}
+.button:hover {
+  background-color: #f5eb7d;
+  color: #181a18;
+  transition: 0.8s;
+}
+
+.grey-background {
+  background-color: #181a18;
+  padding: 5rem 0;
+}
+
+.title {
+  text-align: center;
+  position: relative;
+}
+.title > h2 {
+  color: #f5eb7d;
+}
+
+.shadow {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.1);
+  letter-spacing: 0.3rem;
+  left: 50%;
+  top: -0.9rem;
+  font-size: 20px;
+}
+
+#my-picture {
+  width: 35%;
+}
+#my-picture img {
+  max-width: 100%;
+}
+
+#about {
+  width: 50%;
+}
+#about h4 {
+  font-family: "Qwitcher Grypen", cursive;
+  font-size: 3rem;
+  font-weight: 100;
+}
+#about > p {
+  margin: 1.3rem 0;
+}
+
+#about-me p {
+  margin-bottom: 0.6rem;
+}
+#about-me p:last-child {
+  margin-bottom: 3rem;
+}
+
+.l-grey-background {
+  background-color: #2a2b2a;
+  padding: 5rem 0;
+}
+
+.paragraph {
+  width: 35%;
+  margin: 1.3rem auto;
+  text-align: center;
+}
+.paragraph h2 {
+  margin-bottom: 0.6rem;
+}
+
+.container-services {
+  width: 23%;
+  text-align: center;
+}
+
+.service-blok {
+  background-color: #181a18;
+  border-radius: 7px;
+  box-shadow: 3px 3px 10px #181a18;
+  padding: 3rem 0;
+}
+.service-blok h3 {
+  margin: 0.9rem 0px;
+}
+.service-blok i {
+  font-size: 1.6rem;
+}
+.service-blok:hover {
+  box-shadow: 3px 3px 30px #f5eb7d;
+  transition: 1s;
+}
+
+.numbers p:first-child {
+  color: #f5eb7d;
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.skill {
+  width: 16.6%;
+  position: relative;
+}
+
+.progress {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.progress-circle {
+  width: 100%;
+  height: 100%;
+  border: 5px solid #f5eb7d;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.progress-num {
+  position: absolute;
+  top: 40px;
+  left: 33px;
+  font-size: 1.3rem;
+}
+
+.percentage-95 {
+  clip: rect(0, 88px, 100px, 0);
+}
+
+.percentage-80 {
+  clip: rect(0, 75px, 100px, 0);
+}
+
+.percentage-60 {
+  clip: rect(0, 60px, 100px, 0);
+}
+
+.skill-name {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.project-container {
+  position: relative;
+  width: 30%;
+}
+.project-container img {
+  width: 100%;
+  border-radius: 7px;
+}
+.project-container .project-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  text-align: center;
+}
+.project-container:hover .project-text {
+  opacity: 1;
+}
+.project-container:hover img {
+  opacity: 0.1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#coming-soon-img {
+  opacity: 0.3;
+}
+
+#coming-soon {
+  opacity: 1;
+}
+
+#contact-form {
+  width: 55%;
+}
+
+#contact-me {
+  width: 40%;
+  padding: 6rem 0;
+}
+#contact-me i {
+  margin-right: 1.3rem;
+  color: #f5eb7d;
+}
+#contact-me p {
+  margin-bottom: 0.9rem;
+}
+
+.contact-row input[type=text] {
+  width: 47%;
+  background-color: #333536;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px solid #333536;
+}
+.contact-row input[type=email], .contact-row textarea {
+  width: 100%;
+  background-color: #333536;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px solid #333536;
+}
+.contact-row input[type=text], .contact-row input[type=email], .contact-row textarea {
+  caret-color: #ebebeb;
+}
+.contact-row button {
+  width: 35%;
+  background-color: #333536;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px solid #333536;
+  margin: 0px auto;
+  margin-top: 0.9rem;
+  cursor: pointer;
+  color: #ebebeb;
+}
+.contact-row button:hover {
+  background-color: #f5eb7d;
+  color: #181a18;
+  transition: 0.8s;
+}
+
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 0.6rem 0;
+}
+footer i {
+  font-size: 1.6rem;
+}
+footer p:nth-child(2) {
+  margin: 0.9rem 0;
+}
+footer p:nth-child(2) a:nth-child(2) {
+  margin: 0 0.6rem;
+}
+footer p:last-child i {
+  font-size: 0.9rem;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */
