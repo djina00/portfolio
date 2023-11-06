@@ -5,6 +5,7 @@
   margin: 0px;
   font-family: "Cabin", sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {

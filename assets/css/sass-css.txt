@@ -1,4 +1,4 @@
-@@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
 *{
     padding: 0px;
@@ -326,7 +326,6 @@ button{
         transition: 0.8s;
     }
 }
-}
 footer{
     background-color: #000;
     text-align: center;
@@ -396,8 +395,7 @@ footer{
 @media screen and (max-width: 768px) {
     header{
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column; 
     }
     #logo, nav{
         width: 100%;

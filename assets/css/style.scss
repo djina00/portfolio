@@ -5,6 +5,7 @@
     margin: 0px;
     font-family: 'Cabin', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 $yellow:#f5eb7d;
 $dgrey: #181a18;
@@ -123,8 +124,7 @@ nav{
        font-size: 1.3rem;
    p{
     margin: 2rem 0;
-   }
-   
+   } 
 }
 #name, #web-developer{
     margin: 9rem 0;
@@ -264,9 +264,12 @@ nav{
     position: relative;
     @extend .t-margin;
     width: 30%;
+    
     img {
         width: 100%;
         border-radius: 7px;
+        
+        
     }
     .project-text {
         position: absolute;
